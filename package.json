@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "pnpm exec serve . -P 8080",
+    "start": "pnpm exec serve .",
     "deploy": "gh-pages -d .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
