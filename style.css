@@ -4,31 +4,30 @@
 */
 
 @font-face {
-    font-family: '0xProtoNerdFont';
-    font-style: normal;
-    font-weight: 400;
-    src: url(./0xProtoNerdFont-Regular.ttf);
-  }
-  html { background: #111;
-         padding: 1em;
-         font-family: '0xProtoNerdFont';
-         color: #eee;
-         font-size: 1em;
-         line-height: 1;
-         text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
-         letter-spacing: 0.125em;
-         animation-duration: 0.1s;
-         animation-name: textflicker;
-         animation-iteration-count: infinite;
-         animation-direction: alternate;
-  }
-  h1 { 
-    font-size: 3em; 
-  }
+	font-family: '0xProtoNerdFont';
+	font-style: normal;
+	font-weight: 400;
+	src: url(./Proto.ttf);
+}
 
-  a {
-    color: white;
-  }
+
+body {
+	background: #111;
+	font-family: '0xProtoNerdFont';
+	padding: 1em;
+  color: #eee;
+	line-height: 1;
+	text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+	letter-spacing: 0.125em;
+	animation-duration: 0.1s;
+	animation-name: textflicker;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+a {
+	color: white;
+}
 /* 
   @media screen and (min-width: 1200px) {
     body {
@@ -43,17 +42,17 @@
           margin-right: 5em;
       }
   } */
-  
-  @keyframes textflicker {
-    from {
-      text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
-    }
-    to {
-      text-shadow: 1.5px 0.5px 1px #ea36af, -1px -0.5px 2px #75fa69;
-    }
-  }
 
-  nav {
+@keyframes textflicker {
+	from {
+		text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+	}
+	to {
+		text-shadow: 1.5px 0.5px 1px #ea36af, -1px -0.5px 2px #75fa69;
+	}
+}
+
+nav {
     display: flex;
     justify-content: space-around;
   }
@@ -62,7 +61,15 @@
     font-size: 1.5em;
   }
 
-  p {
-    display: inline-block;
-    max-width: 90vw;
+p {
+	font-size: 1em;
+	display: inline-block;
+	max-width: 90vmin;
+	word-wrap: break-word;
+}
+
+@media (min-width: 600px) {
+  body {
+    max-width: 350px;
   }
+}
